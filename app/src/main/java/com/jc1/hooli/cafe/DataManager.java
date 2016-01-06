@@ -13,7 +13,7 @@ public class DataManager {
 
     static {
 
-        data.add(new Course(10101, "Designing a Basic Digital Character II", "This course covers the creation of a basic, engaging character model, from concept development through sketching and modeling of the character. Students will be expected to research and pitch a design and background story, creating concept drawings, storyboards, animatics, and a traditional clay maquette. In the modeling portion of the course, you will construct a basic rig with 3D modeling tools, resulting in a fully animate-able character that can be skinned in any major 3D software package.", 2));
+        data.add(new Course(10101, "Designing a Basic Digital Character I", "This course covers the creation of a basic, engaging character model, from concept development through sketching and modeling of the character. Students will be expected to research and pitch a design and background story, creating concept drawings, storyboards, animatics, and a traditional clay maquette. In the modeling portion of the course, you will construct a basic rig with 3D modeling tools, resulting in a fully animate-able character that can be skinned in any major 3D software package.", 2));
 
         data.add(new Course(10102, "Designing a Basic Digital Character III", "Designing a Basic Digital Character II reviews basic character creation techniques and advances to character setup and final rendering. Learn to rig and skin the character skeleton to create smooth and expressive movement possible. Then, during rendering phase, you’ll learn to create custom textures and materials and apply these to create a realistic appearance for your model.", 3));
 
