@@ -61,11 +61,12 @@ public class MainActivity extends AppCompatActivity {
         // as you specify a parent activity in AndroidManifest.xml
         int id = item.getItemId();
 
-        //noinspection SimplifiableIfStatement
-        if (id == R.id.action_display_detail) {
-            displayDetail(courseData.get(0));
-            return true;
-        }
+        // noinspection SimplifiableIfStatement
+        // click on action display detail then do display detail method
+      // if (id == R.id.action_display_detail) {
+       //     displayDetail(courseData.get(0));
+         //   return true;
+        //}
 
         return super.onOptionsItemSelected(item);
     }
