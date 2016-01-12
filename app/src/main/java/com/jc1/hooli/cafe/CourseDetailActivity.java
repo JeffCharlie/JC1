@@ -29,12 +29,12 @@ public class CourseDetailActivity extends AppCompatActivity {
         tvDesc.setText(course.getDescription());
 
         TextView tvCourseNumber = (TextView) findViewById(R.id.tvCourseNumber);
-        tvCourseNumber.setText("Course #: " + course.getCourseNumber());
+        tvCourseNumber.setText("Weissman Score: " + course.getCourseNumber());
 
         NumberFormat formatter = NumberFormat.getInstance();
         formatter.setMinimumFractionDigits(1);
         TextView tvCredits = (TextView) findViewById(R.id.tvCredits);
-        tvCredits.setText("Credits: " + formatter.format(course.getCredits()));
+        tvCredits.setText("Cost: " + formatter.format(course.getCredits()));
 
         int imageId = getResources().getIdentifier(
                 course.getImageName(), "drawable", getPackageName());
