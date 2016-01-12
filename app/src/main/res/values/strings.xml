@@ -8,14 +8,4 @@
     <string name="course_detail_button">Useless</string>
 
 
-   <!-- <string name="roux">Roux</string>
-    <string name="action_display_detail">Display Detail</string>
-    <string name="action_display_data">Display Data</string>
-    <string name="course_name">Principles of Interface Design &amp; User Experience</string>
-    <string name="hello_world">Hello world!</string>
-    <string name="lorem_ipsum">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</string>
-    <string name="course_number">Course #: 10101</string>
-    <string name="credits">Credits: 3.0</string> -->
-
-
 </resources>
