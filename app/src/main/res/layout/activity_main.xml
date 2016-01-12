@@ -22,14 +22,13 @@
         android:id="@+id/txtOutput"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignBottom="@+id/imageLogo"
-        android:layout_marginBottom="15dp"
         android:layout_marginLeft="20dp"
         android:layout_marginStart="20dp"
         android:layout_toEndOf="@+id/imageLogo"
         android:layout_toRightOf="@+id/imageLogo"
         android:text="@string/course_catalog"
-        android:textSize="28sp"/>
+        android:textSize="28sp"
+        android:layout_above="@android:id/list" />
 
     <ListView
         android:id="@android:id/list"
