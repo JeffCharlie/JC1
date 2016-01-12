@@ -15,7 +15,6 @@
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:gravity="center"
-        android:text="@string/course_name"
         android:textSize="32sp"/>
 
     <ScrollView
@@ -34,7 +33,6 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:paddingRight="10dp"
-            android:text="@string/lorem_ipsum"
             android:textSize="20sp"/>
 
     </ScrollView>
@@ -45,8 +43,7 @@
         android:layout_height="130dp"
         android:layout_alignParentBottom="true"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:src="@drawable/image_10104"/>
+        android:layout_alignParentStart="true" />
 
     <LinearLayout
         android:layout_width="wrap_content"
@@ -61,7 +58,6 @@
             android:id="@+id/tvCourseNumber"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/course_number"
             android:textSize="24sp"
             android:textStyle="bold"/>
 
@@ -71,7 +67,6 @@
             android:layout_height="wrap_content"
             android:layout_marginLeft="20dp"
             android:layout_marginStart="20dp"
-            android:text="@string/credits"
             android:textSize="24sp"
             android:textStyle="bold"/>
 
@@ -79,7 +74,7 @@
             android:id="@+id/button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Enroll"/>
+            android:text="@string/course_detail_button"/>
     </LinearLayout>
 
 </RelativeLayout>

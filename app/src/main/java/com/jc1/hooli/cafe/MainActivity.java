@@ -28,7 +28,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        this.setTitle(getResources().getString(R.string.roux_academy));
+        this.setTitle(getResources().getString(R.string.title_activity_main));
 
         courseData = DataManager.getData();
 
