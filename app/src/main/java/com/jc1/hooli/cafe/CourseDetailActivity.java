@@ -60,7 +60,7 @@ public class CourseDetailActivity extends AppCompatActivity {
         // as you specify a parent activity in AndroidManifest.xml.
         int id = item.getItemId();
 
-        //noinspection SimplifiableIfStatement
+        //noinspection SimplifiableIfStatement test
         if (id == R.id.action_settings) {
             return true;
         }
