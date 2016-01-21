@@ -14,14 +14,14 @@ import java.util.List;
 
 public class MainActivity extends AppCompatActivity {
 
-    protected List<Course> courseData;
+    protected List<FoodItem> courseData;
 
-    protected Course aCourse;
-    public final static String EXTRA_COURSE_NUMBER = "EXTRA_COURSE_NUMBER";
+    protected FoodItem aCourse;
+    public final static String EXTRA_FOODITEM_NUMBER = "EXTRA_FOODITEM_NUMBER";
     public final static String EXTRA_TITLE = "EXTRA_TITLE";
     public final static String EXTRA_DESC = "EXTRA_DESC";
     public final static String EXTRA_IMAGE = "EXTRA_IMAGE";
-    public final static String EXTRA_CREDITS = "EXTRA_CREDITS";
+    public final static String EXTRA_COST = "EXTRA_COST";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -32,7 +32,7 @@ public class MainActivity extends AppCompatActivity {
 
         courseData = DataManager.getData();
 
-        ArrayAdapter<Course> myAdapter = new ArrayAdapter <>(this,
+        ArrayAdapter<FoodItem> myAdapter = new ArrayAdapter <>(this,
                 android.R.layout.simple_list_item_1, courseData);
         ListView listView = (ListView) findViewById(android.R.id.list);
         listView.setAdapter(myAdapter);
@@ -40,7 +40,7 @@ public class MainActivity extends AppCompatActivity {
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                Course course = courseData.get(position);
+                FoodItem course = courseData.get(position);
                 displayDetail(course);
             }
         });
@@ -71,14 +71,14 @@ public class MainActivity extends AppCompatActivity {
         return super.onOptionsItemSelected(item);
     }
 
-    public void displayDetail(Course course) {
+    public void displayDetail(FoodItem course) {
 
-        Intent intent = new Intent(this, CourseDetailActivity.class);
-        intent.putExtra(EXTRA_COURSE_NUMBER, course.getCourseNumber());
+        Intent intent = new Intent(this, FoodItemActivity.class);
+        intent.putExtra(EXTRA_FOODITEM_NUMBER, course.getWeissmanScore());
         intent.putExtra(EXTRA_TITLE, course.getTitle());
         intent.putExtra(EXTRA_DESC, course.getDescription());
         intent.putExtra(EXTRA_IMAGE, course.getImageName());
-        intent.putExtra(EXTRA_CREDITS, course.getCredits());
+        intent.putExtra(EXTRA_COST, course.getCost());
 
         startActivity(intent);
     }

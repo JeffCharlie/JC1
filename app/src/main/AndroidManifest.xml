@@ -18,8 +18,8 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="com.jc1.hooli.cafe.CourseDetailActivity"
-            android:label="@string/title_activity_course_detail"
+            android:name=".FoodItemActivity"
+            android:label="@string/title_activity_food_item"
             android:parentActivityName="com.jc1.hooli.cafe.MainActivity"
             android:screenOrientation="portrait">
             <meta-data

@@ -12,15 +12,15 @@ import android.widget.TextView;
 import java.text.NumberFormat;
 
 
-public class CourseDetailActivity extends AppCompatActivity {
+public class FoodItemActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_course_detail);
+        setContentView(R.layout.activity_food_item);
 
         Intent intent = getIntent();
-        Course course = new Course(intent);
+        FoodItem course = new FoodItem(intent);
 
         TextView tvTitle = (TextView) findViewById(R.id.tvTitle);
         tvTitle.setText(course.getTitle());
@@ -28,13 +28,13 @@ public class CourseDetailActivity extends AppCompatActivity {
         TextView tvDesc = (TextView) findViewById(R.id.tvDescription);
         tvDesc.setText(course.getDescription());
 
-        TextView tvCourseNumber = (TextView) findViewById(R.id.tvCourseNumber);
-        tvCourseNumber.setText("Weissman Score: " + course.getCourseNumber());
+        TextView tvWeissmanScore = (TextView) findViewById(R.id.tvWeissmanScore);
+        tvWeissmanScore.setText("Weissman Score: " + course.getWeissmanScore());
 
         NumberFormat formatter = NumberFormat.getInstance();
         formatter.setMinimumFractionDigits(1);
-        TextView tvCredits = (TextView) findViewById(R.id.tvCredits);
-        tvCredits.setText("Cost: " + formatter.format(course.getCredits()));
+        TextView tvCost = (TextView) findViewById(R.id.tvCost);
+        tvCost.setText("Cost: " + formatter.format(course.getCost()));
 
         int imageId = getResources().getIdentifier(
                 course.getImageName(), "drawable", getPackageName());
@@ -49,7 +49,7 @@ public class CourseDetailActivity extends AppCompatActivity {
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_course_detail, menu);
+        getMenuInflater().inflate(R.menu.menu_food_item, menu);
         return true;
     }
 

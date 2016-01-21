@@ -26,7 +26,7 @@
         android:layout_marginStart="20dp"
         android:layout_toEndOf="@+id/imageLogo"
         android:layout_toRightOf="@+id/imageLogo"
-        android:text="@string/course_catalog"
+        android:text="@string/menu_title"
         android:textSize="28sp"
         android:layout_above="@android:id/list" />
 

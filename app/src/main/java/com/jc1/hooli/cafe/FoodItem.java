@@ -2,30 +2,30 @@ package com.jc1.hooli.cafe;
 
 import android.content.Intent;
 
-public class Course {
+public class FoodItem {
 
-    private int courseNumber;
+    private int weissmanScore;
 
     private String title;
     private String description;
-    private double credits;
+    private double cost;
 
-    public Course(int courseNumber, String title, String description, double credits) {
-        this.courseNumber = courseNumber;
+    public FoodItem(int weissmanScore, String title, String description, double cost) {
+        this.weissmanScore = weissmanScore;
         this.title = title;
         this.description = description;
-        this.credits = credits;
+        this.cost = cost;
     }
 
-    public Course(Intent intent) {
-        courseNumber = intent.getIntExtra(MainActivity.EXTRA_COURSE_NUMBER, 0);
+    public FoodItem(Intent intent) {
+        weissmanScore = intent.getIntExtra(MainActivity.EXTRA_FOODITEM_NUMBER, 0);
         title = intent.getStringExtra(MainActivity.EXTRA_TITLE);
         description = intent.getStringExtra(MainActivity.EXTRA_DESC);
-        credits = intent.getDoubleExtra(MainActivity.EXTRA_CREDITS, 0);
+        cost = intent.getDoubleExtra(MainActivity.EXTRA_COST, 0);
     }
 
-    public int getCourseNumber() {
-        return courseNumber;
+    public int getWeissmanScore() {
+        return weissmanScore;
     }
 
     public String getTitle() {
@@ -36,12 +36,12 @@ public class Course {
         return description;
     }
 
-    public double getCredits() {
-        return credits;
+    public double getCost() {
+        return cost;
     }
 
     public String getImageName() {
-        return "image_" + courseNumber;
+        return "image_" + weissmanScore;
     }
 
     @Override

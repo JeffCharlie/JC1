@@ -2,10 +2,10 @@
 
     <string name="app_name">Hooli Cafe</string>
     <string name="action_settings">Settings</string>
-    <string name="title_activity_course_detail">Description</string>
+    <string name="title_activity_food_item">Description</string>
     <string name="title_activity_main">Hooli Cafe</string>
-    <string name="course_catalog">The Menu</string>
-    <string name="course_detail_button">Useless</string>
+    <string name="menu_title">The Menu</string>
+    <string name="food_item_button">Useless</string>
 
 
 </resources>
