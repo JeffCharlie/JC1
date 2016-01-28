@@ -26,6 +26,15 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.jc1.hooli.cafe.MainActivity" />
         </activity>
+        <activity
+            android:name=".AboutActivity"
+            android:label="@string/title_activity_food_item"
+            android:parentActivityName="com.jc1.hooli.cafe.MainActivity"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.jc1.hooli.cafe.MainActivity" />
+        </activity>
     </application>
 
 </manifest>

@@ -66,6 +66,7 @@ public class MainActivity extends AppCompatActivity {
       if (id == R.id.action_display_detail2) {
             // add about page here in place of the code below
             // displayDetail(courseData.get(0));
+          displayAbout(courseData.get(0));
             return true;
         }
 
@@ -75,6 +76,19 @@ public class MainActivity extends AppCompatActivity {
     public void displayDetail(FoodItem course) {
 
         Intent intent = new Intent(this, FoodItemActivity.class);
+        intent.putExtra(EXTRA_FOODITEM_NUMBER, course.getWeissmanScore());
+        intent.putExtra(EXTRA_TITLE, course.getTitle());
+        intent.putExtra(EXTRA_DESC, course.getDescription());
+        intent.putExtra(EXTRA_IMAGE, course.getImageName());
+        intent.putExtra(EXTRA_COST, course.getCost());
+
+        startActivity(intent);
+    }
+
+
+    public void displayAbout(FoodItem course) {
+
+        Intent intent = new Intent(this, AboutActivity.class);
         intent.putExtra(EXTRA_FOODITEM_NUMBER, course.getWeissmanScore());
         intent.putExtra(EXTRA_TITLE, course.getTitle());
         intent.putExtra(EXTRA_DESC, course.getDescription());
