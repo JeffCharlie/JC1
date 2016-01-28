@@ -49,7 +49,7 @@ public class FoodItemActivity extends AppCompatActivity {
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_food_item, menu);
+        getMenuInflater().inflate(R.menu.menu_main, menu);
         return true;
     }
 
@@ -61,7 +61,7 @@ public class FoodItemActivity extends AppCompatActivity {
         int id = item.getItemId();
 
         //noinspection SimplifiableIfStatement test
-        if (id == R.id.action_settings) {
+        if (id == R.id.action_display_detail2) {
             return true;
         }
 
