@@ -66,8 +66,10 @@ public class MainActivity extends AppCompatActivity {
       if (id == R.id.action_display_detail2) {
             // add about page here in place of the code below
             // displayDetail(courseData.get(0));
-          displayAbout(courseData.get(0));
-            return true;
+          //displayAbout(courseData.get(1));
+          Intent intent = new Intent(this, AboutPage.class);
+          startActivity(intent);
+          return true;
         }
 
         return super.onOptionsItemSelected(item);

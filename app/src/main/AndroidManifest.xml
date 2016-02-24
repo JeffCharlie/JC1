@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.jc1.hooli.cafe" >
+    package="com.jc1.hooli.cafe">
 
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
-        android:theme="@style/AppTheme" >
+        android:theme="@style/AppTheme">
         <activity
-            android:name="com.jc1.hooli.cafe.MainActivity"
+            android:name=".MainActivity"
             android:label="@string/app_name"
             android:screenOrientation="portrait">
             <intent-filter>
@@ -20,7 +20,7 @@
         <activity
             android:name=".FoodItemActivity"
             android:label="@string/title_activity_food_item"
-            android:parentActivityName="com.jc1.hooli.cafe.MainActivity"
+            android:parentActivityName=".MainActivity"
             android:screenOrientation="portrait">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
@@ -29,12 +29,13 @@
         <activity
             android:name=".AboutActivity"
             android:label="@string/title_activity_food_item"
-            android:parentActivityName="com.jc1.hooli.cafe.MainActivity"
+            android:parentActivityName=".MainActivity"
             android:screenOrientation="portrait">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.jc1.hooli.cafe.MainActivity" />
         </activity>
+        <activity android:name=".AboutPage"></activity>
     </application>
 
 </manifest>

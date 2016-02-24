@@ -7,6 +7,10 @@
     <string name="title_activity_main">Hooli Cafe</string>
     <string name="menu_title">The Menu</string>
     <string name="food_item_button">Useless</string>
+    <string name="About_Page_Welcome">Welcome to Hooli Cafe!</string>
+    <string name="About_Page_Contribute">Do you want to give us some money?</string>
+    <string name="About_Page_Donate">Do you want to give us some money?</string>
+    <string name="About_Page_Contact">Contact us at our email address.  Please call us to get our email address.  Our number is available on our website, which is currently in stealth mode, so please email us for the url! :)</string>
 
 
 </resources>
